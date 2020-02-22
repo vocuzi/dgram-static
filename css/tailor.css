@@ -1,0 +1,52 @@
+body {margin: 0; box-sizing: border-box; font-family: 'Gilroy-Medium'; overflow: hidden;}
+body > div { height: 100vh; display: flex;}
+*[hidden] {opacity: 0; user-select: none;}
+
+/* Typography across Survey */
+div#question {padding: 20px 40px 20px; font-size: 40px;}
+div#question--sub-title {padding: 0px 40px 20px; margin-top: -10px; font-size: 25px; color: grey;}
+/* Containers */
+.opt-container {text-align: center;}
+
+/******************
+	Components
+******************/
+
+/* Component Checkbox Option */
+div.comp-checkbox-opt {background-color: white; display: inline-block; margin: 1.8em; transition: .2s all; user-select: none; cursor: pointer; text-align: left;height: 250px; width: 250px;}
+div.comp-checkbox-opt > div {overflow: hidden; border-radius: 5px; padding: 5px; border: 1px solid rgba(0,0,0,0.1); transition: .2s all;} 
+div.comp-checkbox-opt--avatar {height: 190px; width: 240px; display: block; background-size: 90%; background-position: center center; background-repeat: no-repeat;}
+div.comp-checkbox-opt--content {text-align: right; padding: 12px 17px;}
+div.comp-checkbox-opt--content > * {display: inline-block; vertical-align: top;}
+div.comp-checkbox-opt--content div.check-icons {height: 25px; width: 25px; overflow: hidden;}
+div.comp-checkbox-opt--content div.check-icons > div {height: 50px; transition: .2s all;}
+div.comp-checkbox-opt--content span:first-child {line-height: 25px; vertical-align: middle; font-size: 18px; color: #0D132D; float: left;}
+div.comp-checkbox-opt--content span.icon {font-size: 25px; height: 25px; vertical-align: top; display: inline-block;}
+div.comp-checkbox-opt--content span.check-option {opacity: .4;}
+div.comp-checkbox-opt--content span.uncheck-option {color: #7557E3;}
+/* If checked */
+div.comp-checkbox-opt.active {}
+div.comp-checkbox-opt:hover > div {border: 1px solid rgba(0,0,0,0.2);} 
+div.comp-checkbox-opt.active div.check-icons > div {margin-top: -25px;}
+
+/* Component Editable Option */
+div.comp-editable-opt {display: inline-block; user-select: none; cursor: pointer; margin: 1em;}
+div.comp-editable-opt > div {width: 320px; border-radius: 10px; border: 1px solid #dcdcdc; overflow: hidden;}
+div.comp-editable-opt div.comp-editable-opt--avatar {height: 270px; background-size: cover; background-position: center center; background-repeat: no-repeat;}
+
+div.comp-editable-opt div.comp-editable-opt--content {text-align: right; height: 70px; display: table-cell; width: 400px; vertical-align: bottom; padding: 20px 0px;background: #FFFFFF 0% 0% no-repeat padding-box;}
+div.comp-editable-opt span {display: inline-block; vertical-align: middle; line-height: 24px; padding: 6px 12px; min-width: 80px; text-align: center;  font-size: 18px; font-family: 'Gilroy-Bold';}
+div.comp-editable-opt span.danger {color: #D8357B; float: left; padding-left: 25px;}
+div.comp-editable-opt span.button {margin-right: 25px; color: #191919; border: 1px solid #B0ADB9;  border-radius: 5px;}
+/* Component Invite Option */
+div.comp-invite-opt {transition: .2s all;}
+div.comp-invite-opt > span {display: inline-block;text-align: left; margin: .6em .8em; vertical-align: top;}
+div.comp-invite-opt label {display: block; color: #707070;}
+div.comp-invite-opt input {box-sizing: border-box; border: 1px solid #9aa2ae; border-radius: 10px; width: 25vw; font-size: 26px; padding: 5px 10px; font-family: 'Gilroy-Medium'; display: block; background-color: rgba(255,255,255,0.6); outline: none;}
+div.comp-invite-opt div.button {border-radius: 10px; background-color: #7557E3; color: white; font-size: 18px; /*padding: 11px 0px;*/ width: 165px; text-align: center; height: 44px; display: block; overflow: hidden; transition: .2s all;}
+div.comp-invite-opt div.button > div {display: block; height: 44px; line-height: 44px; vertical-align: middle; transition: .2s all;}
+div.comp-invite-opt div.button > div.resend {opacity: 0; background-color: #20AD9F;}
+div.comp-invite-opt ion-icon {font-size: 20px; height: 44px; width: 25px; vertical-align: middle; display: table-cell; color: rgba(0,0,0,0.7);}
+div.comp-invite-opt.active {}
+div.comp-invite-opt.active div.button > div:first-child {margin-top: -44px; opacity: 0;}
+div.comp-invite-opt.active div.button > div.resend {opacity: 1;}
