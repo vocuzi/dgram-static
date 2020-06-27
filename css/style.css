@@ -6,9 +6,9 @@ font-family: 'Merriweather', serif;
 */
 
 @import url('owl.css');
-@import url('fontawesome-all.css');
+/*@import url('fontawesome-all.css');*/
 @import url('stroke-gap-icons.css');
-@import url('flaticon.css');
+/*@import url('flaticon.css');*/
 @import url('animate.css');
 @import url('jquery-ui.css');
 @import url('jquery.fancybox.min.css');
