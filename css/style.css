@@ -16,18 +16,6 @@ font-family: 'Merriweather', serif;
 @import url('hover.css');
 @import url('custom-animate.css');
 
-@font-face {
-  font-family: 'Signature';
-  src:  url('../fonts/JustSignatureRegularea59.eot?lsn0el');
-  src:  url('../fonts/JustSignatureRegularea59.eot?lsn0el#iefix') format('embedded-opentype'),
-    url('../fonts/JustSignatureRegularea59.ttf?lsn0el') format('truetype'),
-    url('../fonts/JustSignatureRegularea59.woff?lsn0el') format('woff'),
-    url('../fonts/JustSignatureRegularea59.svg?lsn0el#Signature') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
 /*** 
 
 ====================================================================
